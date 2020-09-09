@@ -28,3 +28,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+.btn {
+  padding: 5px 20px;
+  display: inline;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+
+.btn--delete {
+  background-color: purple;
+}

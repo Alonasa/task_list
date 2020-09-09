@@ -39,6 +39,8 @@ ul.addEventListener("click", function(e) {
 function addButtons() {
 	for(var i = 0; i < elements.length; i++){
 		var buttonDelete = document.createElement('button');
+		buttonDelete.classList.add('btn');
+		buttonDelete.classList.add('btn--delete');
 		buttonDelete.textContent = 'delete';
 		elements[i].appendChild(buttonDelete);
 	}
