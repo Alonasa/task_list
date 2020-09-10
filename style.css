@@ -58,13 +58,13 @@ body {
 }
 
 .btn--delete {
-  background-color: purple;
-  border: 2px solid palevioletred;
+  background-color: #745174;
+  border: 2px solid #bb919f;
 }
 
 .btn--delete:hover {
-  background-color: palevioletred;
-  border: 2px solid purple;
+  background-color: #c06e89;
+  border: 2px solid #745174;
 }
 
 input[type="color"] {
