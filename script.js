@@ -18,7 +18,6 @@ function createListElement() {
 		buttonDelete.classList.add('btn--delete');
 		buttonDelete.textContent = 'Delete';
 		li.appendChild(buttonDelete);
-
 		buttonDelete.onclick = removeParent;
 }
 
@@ -55,11 +54,28 @@ function addButtons() {
 		buttonDelete.textContent = 'Delete';
 		elements[i].appendChild(buttonDelete);
 		buttonDelete.onclick = removeParent;
-
 	}
 };
 
 addButtons();
+
+
+
+var body = document.querySelector(".set-gradient");
+var color1 = document.querySelector(".color1");
+var color2 = document.querySelector(".color2");
+
+function pickColor() {
+	body.style.background =
+	"linear-gradient(to right, " 
+	+ color1.value 
+	+ ", " 
+	+ color2.value
+	+ ")";
+};
+
+color1.addEventListener("input", pickColor);
+color2.addEventListener("input", pickColor);
 
 
 
